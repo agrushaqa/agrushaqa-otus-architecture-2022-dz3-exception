@@ -76,5 +76,4 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{ github.event.pull_request.head.sha || github.sha}}
-          target_url: http://agrushaqa.github.io/agrushaqa-otus-architecture-2022-dz3-exception
-/${GITHUB_RUN_NUMBER}
+          target_url: http://agrushaqa.github.io/agrushaqa-otus-architecture-2022-dz3-exception/${GITHUB_RUN_NUMBER}
