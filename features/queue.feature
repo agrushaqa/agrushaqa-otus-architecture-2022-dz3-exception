@@ -11,7 +11,7 @@ Feature: Test Command Queue
     Then execute (Log) 1 time
 
   # negative
-  Scenario: text error exception
+  Scenario: text connection exception (command is repeated 1 time)
     Given text (grusha123456)
     Given queue
     And with (PrintCmd) command
@@ -21,7 +21,7 @@ Feature: Test Command Queue
     Then execute (Log) 2 time
 
   # negative
-  Scenario: text error exception
+  Scenario: text environment exception (command is repeated 2 time)
     Given text (Grusha Test text 18.10.2022)
     Given queue
     And with (PrintCmd) command
